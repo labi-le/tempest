@@ -19,7 +19,7 @@ clean:
 	rm -rf $(BUILD_PATH)*
 
 tests:
-	go test ./...
+	go clean -testcache && go test ./...
 
 lint:
 	golangci-lint run

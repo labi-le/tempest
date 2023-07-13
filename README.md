@@ -1,34 +1,12 @@
-# project-name
+# tempest
 
-project description
-
-## Dependencies
-
-- ...
-- ...
+Templating properties of data structures
 
 ## Install
 
 ```sh
-make install
-```
-
-## Usage
-
-```
-Usage of project-name:
-...
-...
-...
-
+go get github.com/labi-le/tempest
 ```
 
 ## Examples of usage
-
-```
-# comment
-....
-
-# comment
-....
-```
+examples of usage can be found in the [example](example) directory
