@@ -5,6 +5,8 @@ import (
 	"strings"
 )
 
+// ReplaceStructByTag replaces all tags in a struct with the given replacements
+// changes only those fields that are marked with the template tag
 func ReplaceStructByTag(v any, replacements []Replacement) {
 	val := reflect.ValueOf(v)
 
@@ -42,6 +44,8 @@ func ReplaceStructByTag(v any, replacements []Replacement) {
 	}
 }
 
+// ReplaceStruct replaces all tags in a struct with the given replacements
+// changes all fields
 func ReplaceStruct(v any, replacements []Replacement) {
 	val := reflect.ValueOf(v)
 
